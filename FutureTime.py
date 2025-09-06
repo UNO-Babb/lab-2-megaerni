@@ -26,7 +26,7 @@ def main():
   #Calculate the time after the user-supplied time has passed.
   finalminute = (currentMinute + moreminutes) % 60
   hourspill = (currentMinute + moreminutes) // 60
-  finalhour = (currentHour + morehours + hourspill) % 12
+  finalhour = ((currentHour + morehours + hourspill - 1) % 12) + 1
 
   #Do not use any if statements in calculating the time.
   finalminute1 = (finalminute) // 10
